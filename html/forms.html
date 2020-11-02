@@ -61,7 +61,8 @@
         </form>
     </hr>
 
-    <!--Search HTML-->>
+    <hr>
+    <!--Search HTML-->
     <h2>Hijacking Search</h2>
 
     <h3>Search Reddit</h3>
@@ -87,6 +88,7 @@
         <input type = "checkbox" name = "agree_tos" id = "agree">
         <label for = "agree">I agree with everything</label>
 
+        <!--RADIO BUTTON-->
         <p>
             <label for = "xs">XS:</label>
             <input type = "radio" name = "size" id="xs" value = "xs">
@@ -95,9 +97,48 @@
             <label for = "m">M:</label>
             <input type = "radio" name = "size" id="m" value = "m">
         </p>
+
+        <!--SELECT INPUT-->
+        <p>
+            <label for = "meal">Please Select An Entree</label>
+            <select name = "meal" id = "meal">
+                <option value = "">--Please Choose Meal--</option>
+                <option value = "fish">Fish</option>
+                <option value = "veg">Vegetarian</option>
+                <option value = "steak">Steak</option>
+            </select>
+        </p>
+
+        <p>
+            <label for = "cheese">Amount of Cheese</label>
+            <input type = "range" id = "cheese" min="1" max = "100" step = "7" value = "50" name = "cheese_level">
+        </p>
+        
+        <p>
+            <label for = "request">Any Special Request?</label>
+            <br>
+            <textarea id = "request" placeholder = "Type Requests Here" cols = "40" rows = "10" name = "Request"></textarea>
+        </p>
+
         <button>Submit</button>
     </form>
+    <hr>
+    <!--VALIDATION-->
+    <h2>VALIDATION DEMO</h2>
+    <form action = "/dummy">
+        <label for = "first"> Enter First Name:</label>
+        <input type = "text" name = "first" id="first" placeholder = "First Name"required>
+        <p>
+            <label for = "username">Username:</label>
+            <input type = "text" id = "username" name = "username" minlength = "5" maxlength = "20" placeholder = "Username">
+        </p>
 
+        <p>
+            <label for = "email">Email:</label>
+            <input type = "email" id = "email" name = "email" placeholder = "Email"required>
+        </p>
+        <button>Submit</button>
+    </form>
     <script src="" async defer></script>
   </body> 
 </html>
