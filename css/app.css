@@ -1,19 +1,18 @@
-h2 {
-    color: #5fcffc;
-    background-color: rgb(89, 151, 0);
+body{
+    background-color: #f1faee;
 }
 
 button {
-    color: magenta;
-    background-color: cyan;
+    font-size: 30px;
+    background-color: #a8dadc;
 }
 
-p {
-    color: olive;
-    background: rgb(228, 161, 37)
+select{
+    background-color: azure;
 }
 
-body {
-    background-color: #cc55ee
-    
+h1,h2{
+    color: #1d3557;
 }
+
+
