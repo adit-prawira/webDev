@@ -15,4 +15,14 @@ h1,h2{
     color: #1d3557;
 }
 
+button:hover {
+    background-color: #e63946;
+    color : #f1faee;
+    font-weight: bold;
+}
+
+button:active{
+    background-color: mediumseagreen;
+}
+
 
