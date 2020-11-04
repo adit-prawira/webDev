@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="css/appBoolCalculator.css">
+    </head>
+    <body>
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+        <div id = "res"></div>
+
+        <div id = "btns">
+            <button id = "btn0" onclick="clickBinary('0')">0</button>
+            <button id = "btn1" onclick="clickBinary('1')">1</button>
+            <button id = "btnClr" onclick="clickClear()">C</button>
+            <button id = "btnEql" onclick="clickEqual()">=</button>
+            <button id = "btnSum" onclick="clickOperator('+')">+</button>
+            <button id = "btnSub" onclick="clickOperator('-')">-</button>
+            <button id = "btnMul" onclick="clickOperator('*')">*</button>
+            <button id = "btnDiv" onclick="clickOperator('/')">/</button>
+        </div>
+
+        <script src="javascript/binaryCalculator.js" async defer></script>
+    </body>
+</html>
