@@ -1,11 +1,10 @@
-const form= document.querySelector("form");
-const groceryContainer = document.querySelector("#tweets");
+const form = document.querySelector("form");
+const groceryList = document.querySelector("#list");
 
 form.addEventListener('submit', function(e){
     e.preventDefault();
-
-    const productInput = tweetForm.elements.product;
-    const qtyInput = tweetForm.elements.qty;
+    const productInput = form.elements.product;
+    const qtyInput = form.elements.qty;
 
     addTweet(productInput.value, qtyInput.value);
     productInput.value = "";
@@ -14,6 +13,7 @@ form.addEventListener('submit', function(e){
 
 const addTweet = (product, qty) =>{
     const newProduct = document.createElement('li');
-    newProduct.innerText = `${qty} ${product}`;
-    groceryContainer.appendChild(newProduct);
+    newProduct .append(`${qty}`);
+    newProduct .append(` ${product}`);
+    groceryList.append(newProduct );
 }

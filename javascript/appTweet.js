@@ -1,4 +1,4 @@
-const tweetForm = document.querySelector("#tweetForm");
+const tweetForm = document.querySelector("form");
 const tweetContainer = document.querySelector("#tweets");
 
 tweetForm.addEventListener('submit', function(e){
