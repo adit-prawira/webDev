@@ -4,7 +4,7 @@ var op1 = "", operator = "", op2 = "";
 
 let clickBinary = function(binary){
     if (operator.length != 0) {
-        op2 += binary;
+        op2 += binary; 
     } else { 
         op1 += binary;
     }
