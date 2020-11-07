@@ -3,8 +3,8 @@ const groceryList = document.querySelector("#list");
 
 form.addEventListener('submit', function(e){
     e.preventDefault();
-    const productInput = form.elements.product;
-    const qtyInput = form.elements.qty;
+    const productInput = form.getAttribute('product');
+    const qtyInput = form.getAttribute('qty');
 
     addTweet(productInput.value, qtyInput.value);
     productInput.value = "";
